@@ -1,11 +1,12 @@
-import os
-from mcp.server import Server
-from mcp.server.stdio import stdio_server
-from kommo_client import KommoClient
-from tools import list_leads
+from fastapi import FastAPI
+from tools.list_leads import list_leads
+import uvicorn
 
-server = Server("kommo-mcp")
-server.register_tool(list_leads)
+app = FastAPI()
+
+@app.get("/tools/list_leads")
+def get_leads():
+    return list_leads()
 
 if __name__ == "__main__":
-    stdio_server(server)
+    uvicorn.run(app, host="0.0.0.0", port=8000)

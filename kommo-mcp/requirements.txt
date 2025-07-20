@@ -1,2 +1,4 @@
 mcp-server
 httpx
+fastapi
+uvicorn
