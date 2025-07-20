@@ -65,15 +65,9 @@ Soluções em IA, automações e eficiência para clínicas e negócios em cresc
 
 **🌐 Site**: [https://triadeflow.com.br](https://triadeflow.com.br)  
 **📧 E-mail**: contato@triadeflow.com.br  
-**📱 WhatsApp**: [Clique para falar](https://wa.me/5585994299993)  
+**📱 WhatsApp**: [Clique para falar](https://wa.me/5585984551176)  
 **📸 Instagram**: [@triadeflow](https://instagram.com/triadeflow)
 
 ---
 
-## ✅ Versionamento
 
-```bash
-git add README.md
-git commit -m "docs: adiciona README com instruções do projeto"
-git push
-```
