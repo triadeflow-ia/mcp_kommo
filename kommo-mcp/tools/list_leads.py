@@ -10,9 +10,12 @@ def call_tool(input: dict) -> CallToolResult:
 list_leads = Tool(
     name="kommo_list_leads",
     description="Lista os 10 últimos leads do Kommo CRM",
-    input_spec={},
-    output_spec={
-        "leads": [{"id": "ID do lead", "name": "Nome do lead"}]
+    inputSchema={},  # <-- CORRETO
+    outputSchema={   # <-- CORRETO
+        "leads": [
+            {"id": "ID do lead", "name": "Nome do lead"}
+        ]
     },
     call=call_tool
 )
+
