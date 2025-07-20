@@ -1,0 +1,6 @@
+{
+  "name": "kommo-mcp",
+  "version": "0.1.0",
+  "tools": ["kommo_list_leads"],
+  "resources": []
+}
