@@ -43,23 +43,25 @@ Este projeto oferece uma solução completa para automação e gerenciamento int
 ---
 
 ## 📂 Estrutura do Projeto
+
+```bash
 mcp_kommo/
 ├── src/
-│   └── kommo_mcp_server.py    # Servidor MCP principal
+│   └── kommo_mcp_server.py       # Servidor MCP principal
 ├── tools/
-│   ├── list_leads.py          # Ferramenta de listagem
-│   └── ...                    # Outras ferramentas
+│   ├── list_leads.py             # Ferramenta de listagem
+│   └── ...                       # Outras ferramentas
 ├── examples/
-│   └── example_usage.py       # Exemplos de uso
+│   └── example_usage.py          # Exemplos de uso
 ├── tests/
-│   └── test_kommo_server.py   # Testes unitários
-├── main.py                    # Ponto de entrada
-├── kommo_client.py           # Cliente Kommo
-├── mcp_config.json           # Configurações MCP
-├── requirements.txt          # Dependências
-├── Dockerfile               # Container Docker
-├── .env.example            # Variáveis de ambiente
-└── README.md              # Este arquivo
+│   └── test_kommo_server.py      # Testes unitários
+├── main.py                       # Ponto de entrada
+├── kommo_client.py               # Cliente Kommo
+├── mcp_config.json               # Configurações MCP
+├── requirements.txt              # Dependências
+├── Dockerfile                    # Container Docker
+├── .env.example                  # Variáveis de ambiente
+└── README.md                     # Este arquivo
 
 ---
 
