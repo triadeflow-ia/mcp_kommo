@@ -62,6 +62,7 @@ mcp_kommo/
 ├── Dockerfile                    # Container Docker
 ├── .env.example                  # Variáveis de ambiente
 └── README.md                     # Este arquivo
+```
 
 ---
 
@@ -71,10 +72,9 @@ mcp_kommo/
 ```bash
 git clone https://github.com/triadeflow-ia/mcp_kommo.git
 cd mcp_kommo
+```
 
-## 🛠️ Instalação e Uso
-
-2. Configure as variáveis de ambiente:
+### 2. Configure as variáveis de ambiente:
 ```bash
 cp .env.example .env
 ```
@@ -84,12 +84,12 @@ KOMMO_ACCESS_TOKEN=seu_token_aqui
 KOMMO_BASE_URL=https://suaconta.kommo.com
 ```
 
-3. Instale as dependências:
+### 3. Instale as dependências:
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Execute o servidor:
+### 4. Execute o servidor:
 ```bash
 python main.py
 ```
@@ -98,7 +98,7 @@ python main.py
 
 ## 🔌 Como Usar
 
-**Exemplo de Autenticação:**
+### Exemplo de Autenticação:
 ```json
 {
   "tool": "authenticate",
@@ -109,7 +109,7 @@ python main.py
 }
 ```
 
-**Exemplo de Criação de Lead:**
+### Exemplo de Criação de Lead:
 ```json
 {
   "tool": "create_lead",
@@ -125,7 +125,7 @@ python main.py
 }
 ```
 
-**Exemplo de Análise de Vendas:**
+### Exemplo de Análise de Vendas:
 ```json
 {
   "tool": "analyze_sales_performance",
@@ -141,12 +141,12 @@ python main.py
 
 ## 🐳 Deploy com Docker
 
-Build da imagem:
+### Build da imagem:
 ```bash
 docker build -t mcp-kommo .
 ```
 
-Execute o container:
+### Execute o container:
 ```bash
 docker run -p 8000:8000 --env-file .env mcp-kommo
 ```
@@ -243,4 +243,3 @@ Soluções em IA, automações e eficiência para clínicas e negócios em cresc
 ## ⭐ Nos apoie!
 
 Se este projeto foi útil para você, considere dar uma estrela ⭐ no GitHub!
-
