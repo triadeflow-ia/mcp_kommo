@@ -69,31 +69,25 @@ mcp_kommo/
 ```bash
 git clone https://github.com/triadeflow-ia/mcp_kommo.git
 cd mcp_kommo
-
 2. Configure as variáveis de ambiente
-cp .env.example .env
-
+bashcp .env.example .env
 Edite o arquivo .env com suas credenciais:
-KOMMO_ACCESS_TOKEN=seu_token_aqui
+envKOMMO_ACCESS_TOKEN=seu_token_aqui
 KOMMO_BASE_URL=https://suaconta.kommo.com
-
 3. Instale as dependências
-pip install -r requirements.txt
-
+bashpip install -r requirements.txt
 4. Execute o servidor
-python main.py
+bashpython main.py
 
 🔌 Como Usar
 Exemplo de Autenticação
-{
+python{
     "tool": "authenticate",
     "arguments": {
         "access_token": "seu_token",
         "base_url": "https://suaconta.kommo.com"
     }
 }
-
-
 Exemplo de Criação de Lead
 python{
     "tool": "create_lead",
@@ -195,14 +189,3 @@ Soluções em IA, automações e eficiência para clínicas e negócios em cresc
 
 ⭐ Nos apoie!
 Se este projeto foi útil para você, considere dar uma estrela ⭐ no GitHub!
-
-Este README melhorado:
-1. ✅ Detalha TODAS as funcionalidades do servidor MCP completo
-2. ✅ Inclui exemplos práticos de uso
-3. ✅ Adiciona instruções de deploy com Docker
-4. ✅ Lista todas as ferramentas disponíveis
-5. ✅ Mantém a identidade da Tríadeflow
-6. ✅ Adiciona seção de contribuição
-7. ✅ Inclui badge do Railway para deploy rápido
-
-Isso tornará seu projeto mais profissional e atrativo para potenciais usuários e colaboradores!
